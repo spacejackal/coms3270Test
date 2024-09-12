@@ -4,8 +4,8 @@
 int stat1() {
 	double highx, highy, highHeight;
 	double lowx, lowy, lowHeight;
-	scanf("%f %f %f", &highx, &highy, &highHeight);
-	printf("%d/n",highx);
+	scanf("%lf %lf %lf", &highx, &highy, &highHeight);
+	printf("%lf/n",highx);
 
 	return 0;
 }
