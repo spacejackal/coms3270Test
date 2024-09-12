@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int stat1(char name[]) {
+int stat1() {
 	double highx, highy, highHeight;
 	double lowx, lowy, lowHeight;
 	scanf("%f %f %f", &highx &highy & highHeight);
