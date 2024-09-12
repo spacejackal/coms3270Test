@@ -4,14 +4,14 @@
 int stat1() {
 	double highx, highy;
 	double lowx, lowy;
-	long long highHeight,lowHeight;
+	double highHeight,lowHeight;
 	scanf("%lf", &highx);
 	scanf("%lf", &highy);
-	scanf("%lli", &highHeight);
+	scanf("%lf", &highHeight);
 	
 	printf("this is the x location %lf\n",highx);
 	printf("this is the y location %lf\n", highy);
-	printf("this is the height of the location %lli\n", highHeight);
+	printf("this is the height of the location %lf\n", highHeight);
 	
 	return 0;
 }
