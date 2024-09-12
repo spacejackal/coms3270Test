@@ -1,5 +1,6 @@
 #ifndef POINTCLOUD
-int stat1(char name[]);
+#define POINTCLOUD
+int stat1();
 int main();
 #endif // !POINTCLOUD
 
