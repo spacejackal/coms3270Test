@@ -6,7 +6,6 @@ int stat1(char name[]) {
 }
 
 int main() {
-	printf("Hello World");
-	return 0;
-
+	stat1();
+	return 1;
 }
