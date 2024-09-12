@@ -4,7 +4,7 @@
 int stat1(char name[]) {
 	double highx, highy, highHeight;
 	double lowx, lowy, lowHeight;
-	scanf("%d %d %d", &highx & highy & highHeight);
+	scanf("%f %f %f", &highx &highy & highHeight);
 	printf("%d/n",highx);
 
 	return 0;
