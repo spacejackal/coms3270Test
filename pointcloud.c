@@ -7,11 +7,11 @@ int stat1() {
 	long long highHeight,lowHeight;
 	scanf("%lf", &highx);
 	scanf("%lf", &highy);
-	scanf("%llf", &highHeight);
+	scanf("%lld", &highHeight);
 	
 	printf("this is the x location %lf\n",highx);
 	printf("this is the y location %lf\n", highy);
-	printf("this is the height of the location %llf\n", highHeight);
+	printf("this is the height of the location %lld\n", highHeight);
 	
 	return 0;
 }
