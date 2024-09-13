@@ -1,8 +1,8 @@
-project1: pointcloud.o
-	gcc pointcloud.o -o project1
+stat: pointcloud.o
+	gcc pointcloud.o -o stat
 
 pointcloud.o: pointcloud.c pointcloud.h
 	gcc -c pointcloud.c
 	
 clean:
-	rm -f *.o project1
+	rm -f *.o stat
