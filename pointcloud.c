@@ -16,7 +16,7 @@ int stat1() {
 	double total;
 	int count;
 	
-	scanf("%lf %lf %lf", &high.x, high.y, high.height);
+	scanf("%lf %lf %lf", &high.x, &high.y, &high.height);
 	//scanf("%lf", &high.y);
 	//scanf("%lf", &high.height);
 
