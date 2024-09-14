@@ -2,6 +2,8 @@
 #include <stdio.h>
 
 int main() {
-	printf("Hello world\n");
+	int x = 5;
+	x = 10
+	printf("Hello world\n x =10");
 	return 0;
 }
