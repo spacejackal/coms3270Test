@@ -22,7 +22,7 @@ int stat1() {
 	low.y = high.y;
 	low.height = high.height;
 	total += high.height;
-	while (scanf("%lf %lf %lf", &temp.x, &temp.y, &temp.height)) {
+	while (scanf("%lf %lf %lf", &temp.x, &temp.y, &temp.height) != EOF) {
 		if (temp.height > high.height) {
 			high.x = temp.x;
 			high.y = temp.y;
