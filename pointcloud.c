@@ -15,7 +15,7 @@ int main() {
 int stat1() {
 	struct point high; //defines the struct to keep track of the high point
 	struct point low;  //defines the struct to keep track of the low point
-	struct point temp; //defines the struct to keep a tep point to compare to the high and low points
+	struct point temp; //defines the struct to keep a temp point to compare to the high and low points
 	double total;	   //defines the total to compute the average
 	int count = 1;
 	
@@ -38,11 +38,12 @@ int stat1() {
 		count++;	
 		total = temp.height;
 	}
+	total /= count;
 
 
-	printf("this is the x location %lf\n", high.x);
-	printf("this is the y location %lf\n", high.y);
-	printf("this is the height of the location %lf\n", high.height);
+	printf("high point %lf, %lf, %lf \n", high.x, high.y, high.height);
+	printf("low point %lf, %lf, %lf \n", low.x, low.y, low.height);
+	printf("average %lf , count %d \n", total, count);
 
 	return 0;
 }
