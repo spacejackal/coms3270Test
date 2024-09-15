@@ -36,7 +36,7 @@ int stat1() {
 			low.height = temp.height;
 		}
 		count++;	
-		total = temp.height;
+		total += temp.height;
 	}
 	total /= count;
 
