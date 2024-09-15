@@ -3,7 +3,7 @@
 
 //this struct is used to keep track of points in a condensed and easy manner
 struct point{
-	double x, y, height;
+	long double x, y, height;
 };
 
 //the main method calls stat1
@@ -16,15 +16,15 @@ int stat1() {
 	struct point high; //defines the struct to keep track of the high point
 	struct point low;  //defines the struct to keep track of the low point
 	struct point temp; //defines the struct to keep a temp point to compare to the high and low points
-	double total;	   //defines the total to compute the average
+	long double total;	   //defines the total to compute the average
 	int count = 1;
 	
-	scanf("%lf %lf %lf", &high.x, &high.y, &high.height); //gets the first point and makes it the high point;
+	scanf("%llf %llf %llf", &high.x, &high.y, &high.height); //gets the first point and makes it the high point;
 	low.x = high.x;		//bellow assinments are used to make the low point the same as the high point
 	low.y = high.y;
 	low.height = high.height;
 	total += high.height;
-	while (scanf("%lf %lf %lf", &temp.x, &temp.y, &temp.height) != EOF) { //reads all set of 3 double values and assings it to the temp point
+	while (scanf("%llf %llf %llf", &temp.x, &temp.y, &temp.height) != EOF) { //reads all set of 3 double values and assings it to the temp point
 		if (temp.height > high.height) {  //if the temp point has more height the the high point, make it the high point
 			high.x = temp.x;
 			high.y = temp.y;
@@ -41,9 +41,9 @@ int stat1() {
 	total /= count;
 
 
-	printf("high point %lf, %lf, %lf \n", high.x, high.y, high.height);
-	printf("low point %lf, %lf, %lf \n", low.x, low.y, low.height);
-	printf("average %lf , count %d \n", total, count);
+	printf("high point %llf, %llf, %llf \n", high.x, high.y, high.height);
+	printf("low point %llf, %llf, %llf \n", low.x, low.y, low.height);
+	printf("average %llf , count %d \n", total, count);
 
 	return 0;
 }
