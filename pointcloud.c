@@ -42,9 +42,9 @@ int stat1() {
 	total /= count;
 
 
-	printf("high point %f, %f, %lf \n", high.x, high.y, high.height);
-	printf("low point %f, %f, %lf \n", low.x, low.y, low.height);
-	printf("average %lf , count %d \n", total, count);
+	printf("high point %f, %f, %f \n", high.x, high.y, high.height);
+	printf("low point %f, %f, %f \n", low.x, low.y, low.height);
+	printf("average %f , count %d \n", total, count);
 
 	return 0;
 }
