@@ -44,9 +44,9 @@ int stat1() {
 	total /= count;
 
 
-	printf("high point %.1f, %.1f, %.15f \n", high.x, high.y, high.height); //prints out the x, y, and height value of the high point
-	printf("low point %.1f, %.1f, %.15f \n", low.x, low.y, low.height);
-	printf("average %.15f , count %d \n", total, count); //prints out the average of the points looked at and the total number of points looked at
+	printf("High point: x = %.1f, y = %.1f, height = %.15f \n", high.x, high.y, high.height); //prints out the x, y, and height value of the high point
+	printf("Low point: x = %.1f, y = %.1f, height = %.15f \n", low.x, low.y, low.height);
+	printf("Average %.15f , number of points %d \n", total, count); //prints out the average of the points looked at and the total number of points looked at
 
 	return 0;
 }
