@@ -3,5 +3,5 @@
 #include "util.h"
 
 void *allocateArray(int rows, int columns) {
-	malloc
+	malloc(sizeOf(double) * (rows * columns));
 }
